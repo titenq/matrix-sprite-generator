@@ -32,7 +32,11 @@ const matrixSpriteGenerator = (
 
   array.length = numSprites;
 
-  return array;
+  return {
+    matrix: array,
+    spriteWidth,
+    spriteHeight
+  };
 };
 
 console.log(matrixSpriteGenerator(2400, 1920, 5, 4, 20));
